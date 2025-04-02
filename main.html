@@ -10,7 +10,20 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			
+			let mx=Number.MIN_VALUE;
+			 let ans=mx;
+			 arr.forEach((item)=>{
+			   if(item>mx){
+			     mx=item;
+			   }
+			 })
+			 
+			 arr.forEach((item)=>{
+			   if(item>ans && item!==mx){
+			     ans=item;
+			   }
+			 })
+			return ans;
 		}
 
 		function Main() {
