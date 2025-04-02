@@ -23,7 +23,7 @@
 			     ans=item;
 			   }
 			 })
-			return ans;
+			return ans===Number.MIN_VALUE?Number.NEGATIVE_INFINITY:ans;
 		}
 
 		function Main() {
